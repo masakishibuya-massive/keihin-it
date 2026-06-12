@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>京浜ITパートナーズ | 月額5万円で、「うちのIT担当」を。</title>
+<meta name="description" content="京浜工業地帯(川崎区)の小規模事業者向けITサポートサブスクリプション。月額5万円で、いつでも相談できるIT担当者を。">
+<style>
+  :root{
+    --teal:#028090; --dark:#07333B; --dark2:#0C4650; --mint:#37D3AE;
+    --tint:#EAF4F5; --text:#202B2F; --muted:#5E6E73; --ice:#C9E6E9;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Meiryo UI",Meiryo,"Hiragino Kaku Gothic ProN",sans-serif;color:var(--text);line-height:1.8}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  section{padding:72px 0}
+  h2{font-size:1.7rem;color:var(--dark);margin-bottom:36px}
+  /* header */
+  header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e3eced;z-index:10}
+  .nav{display:flex;justify-content:space-between;align-items:center;height:60px}
+  .logo{font-weight:bold;color:var(--dark);font-size:1.05rem}
+  .nav a{color:var(--muted);text-decoration:none;margin-left:20px;font-size:.9rem}
+  .nav a:hover{color:var(--teal)}
+  /* hero */
+  .hero{background:var(--dark);color:#fff;padding:96px 0;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:var(--dark2)}
+  .hero::after{content:"";position:absolute;right:60px;bottom:-100px;width:240px;height:240px;border-radius:50%;background:var(--teal);opacity:.85}
+  .hero .wrap{position:relative;z-index:1}
+  .hero h1{font-size:2.2rem;margin-bottom:14px}
+  .hero .tag{color:var(--mint);font-size:1.3rem;font-weight:bold;margin-bottom:18px}
+  .hero p{color:var(--ice);max-width:560px}
+  .cta{display:inline-block;margin-top:28px;background:var(--mint);color:var(--dark);font-weight:bold;padding:14px 34px;border-radius:32px;text-decoration:none}
+  .cta:hover{opacity:.9}
+  /* cards */
+  .grid{display:grid;gap:20px}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .card{background:var(--tint);border-radius:14px;padding:26px}
+  .card h3{color:var(--dark);font-size:1.05rem;margin:12px 0 8px}
+  .card p{font-size:.9rem;color:var(--text)}
+  .badge{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--teal);color:#fff;font-weight:bold}
+  /* stats */
+  .stats{background:var(--tint)}
+  .stat{background:#fff;border-radius:14px;padding:30px;text-align:center}
+  .stat .num{font-size:2.6rem;font-weight:bold;color:var(--teal)}
+  .stat .lab{font-size:.9rem;font-weight:bold;margin:8px 0}
+  .stat .src{font-size:.72rem;color:var(--muted)}
+  /* price */
+  .price{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}
+  .pricebox{background:var(--dark);color:#fff;border-radius:18px;padding:48px;text-align:center}
+  .pricebox .yen{font-size:3.4rem;font-weight:bold}
+  .pricebox .note{color:var(--mint);font-weight:bold;margin-top:10px}
+  .pricebox .sub{color:var(--ice);font-size:.8rem;margin-top:6px}
+  .pricenote{font-size:.78rem;color:var(--muted);margin-top:14px}
+  /* steps */
+  .steps{counter-reset:step}
+  .steps .card{text-align:center}
+  /* footer */
+  footer{background:var(--dark);color:var(--ice);padding:56px 0;text-align:center}
+  footer .logo{color:#fff;font-size:1.2rem;margin-bottom:10px}
+  footer p{font-size:.85rem}
+  @media(max-width:760px){
+    .g2,.g3,.g4,.price{grid-template-columns:1fr}
+    .hero h1{font-size:1.6rem}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="logo">京浜ITパートナーズ</div>
+    <nav>
+      <a href="#service">サービス</a><a href="#price">料金</a><a href="#flow">ご利用の流れ</a><a href="#about">会社概要</a><a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="tag">月額5万円で、「うちのIT担当」を。</div>
+    <h1>京浜工業地帯の小さな会社に、<br>大企業並みのIT活用を。</h1>
+    <p>京浜ITパートナーズは、川崎区を中心とした小規模事業者向けのITサポートサブスクリプションです。AIと現役SEがチームで、御社の「いつでも相談できるIT担当者」になります。</p>
+    <a class="cta" href="#contact">無料相談はこちら</a>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <h2>こんなお困りごとはありませんか?</h2>
+    <div class="grid g2">
+      <div class="card"><span class="badge">!</span><h3>相談相手がいない</h3><p>パソコンやネットの不調を誰に聞けばよいか分からず、社長や事務担当が片手間で対応している。</p></div>
+      <div class="card"><span class="badge">!</span><h3>適正価格が分からない</h3><p>機器やソフトの見積もりが妥当か判断できず、業者に言われるまま契約している。</p></div>
+      <div class="card"><span class="badge">!</span><h3>紙とExcelから抜け出せない</h3><p>業務を効率化したい気持ちはあるが、何をどう変えればよいか手が回らない。</p></div>
+      <div class="card"><span class="badge">!</span><h3>AI・DXが他人事</h3><p>世間はAIブームだが、自社の仕事にどう活かせるのか想像がつかない。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <h2>中小企業のITは、構造的に「人」が足りない</h2>
+    <div class="grid g3">
+      <div class="stat"><div class="num">約7割</div><div class="lab">IT・デジタル人材を採用していない</div><div class="src">出典: 中小企業白書(2023年版)</div></div>
+      <div class="stat"><div class="num">40.6%</div><div class="lab">DXに取り組む中小企業の割合(大企業は66.0%)</div><div class="src">出典: 東京商工リサーチ調査</div></div>
+      <div class="stat"><div class="num">約8割</div><div class="lab">小規模企業は生成AIの導入予定なし</div><div class="src">出典: IPA「DX動向2025」</div></div>
+    </div>
+    <p style="margin-top:28px">専任のIT担当を雇う体力がない一方、業務はITに頼らざるを得ない ― <strong style="color:var(--teal)">この構造的なギャップを埋めるのが私たちの役割です。</strong></p>
+  </div>
+</section>
+
+<section id="service">
+  <div class="wrap">
+    <h2>サービス内容 ― 月額に含まれる8つのサポート</h2>
+    <div class="grid g4">
+      <div class="card"><span class="badge">1</span><h3>問い合わせ対応</h3><p>日々のITの困りごとに営業日内に回答</p></div>
+      <div class="card"><span class="badge">2</span><h3>ITコンサルティング</h3><p>事業課題をITで解決する道筋を提案</p></div>
+      <div class="card"><span class="badge">3</span><h3>機器の選定・手配</h3><p>複数社一括発注で割安に調達</p></div>
+      <div class="card"><span class="badge">4</span><h3>業務アプリ作成</h3><p>簡易な業務アプリを設計・作成</p></div>
+      <div class="card"><span class="badge">5</span><h3>SaaS選定・運用</h3><p>自社に合うサービスを選定し管理</p></div>
+      <div class="card"><span class="badge">6</span><h3>ITコスト見直し</h3><p>通信費等を棚卸ししムダを削減</p></div>
+      <div class="card"><span class="badge">7</span><h3>AI活用提案</h3><p>AIによる業務効率化を検討・提案</p></div>
+      <div class="card"><span class="badge">8</span><h3>ユーザー会</h3><p>地域事業者の交流会を定期開催</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="price" class="stats">
+  <div class="wrap">
+    <h2>料金 ― 迷わない、ひとつのプラン</h2>
+    <div class="price">
+      <div class="pricebox">
+        <div>月額</div>
+        <div class="yen">5万円</div>
+        <div class="note">追加費用のない単一プラン</div>
+        <div class="sub">(機器代・SaaS利用料などの実費は別途)</div>
+      </div>
+      <div>
+        <p>専任のIT担当者を1名雇用すると、社会保険料等の企業負担を含め<strong>月45万円〜</strong>かかります。京浜ITパートナーズは、1人のSEとAIを複数社でシェアすることで、その約9分の1の月額を実現しました。</p>
+        <p class="pricenote">※ ITエンジニア平均年収469万円(doda調査・2025)に社会保険料等の企業負担(約15%)を加えた月額換算の概算。採用・教育コストは含みません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <h2>ふだんの対応と、ご利用開始までの流れ</h2>
+    <div class="grid g3 steps">
+      <div class="card"><span class="badge">1</span><h3>メール・チャットで相談</h3><p>難しい言葉は不要。「なんとなく調子が悪い」でOK。</p></div>
+      <div class="card"><span class="badge">2</span><h3>AIが一次回答(営業日内)</h3><p>よくあるトラブルはAIアシスタントがすぐに解決策を返答。</p></div>
+      <div class="card"><span class="badge">3</span><h3>担当SEが対応・訪問</h3><p>提案・機器故障・打ち合わせは人間の担当SEが直接対応。川崎区内なら現場にも伺います。</p></div>
+    </div>
+    <p style="margin-top:24px">ご利用開始までは <strong>お問い合わせ → 無料ヒアリング → ご契約 → 利用開始</strong> の4ステップ、最短2週間。<strong style="color:var(--teal)">ヒアリングまでは費用は一切かかりません。</strong></p>
+  </div>
+</section>
+
+<section id="about" class="stats">
+  <div class="wrap">
+    <h2>会社概要</h2>
+    <table style="width:100%;max-width:640px;border-collapse:collapse;font-size:.95rem">
+      <tr><td style="padding:10px;border-bottom:1px solid #d7e5e7;width:160px;color:var(--muted)">屋号</td><td style="padding:10px;border-bottom:1px solid #d7e5e7">京浜ITパートナーズ</td></tr>
+      <tr><td style="padding:10px;border-bottom:1px solid #d7e5e7;color:var(--muted)">代表</td><td style="padding:10px;border-bottom:1px solid #d7e5e7">masaki</td></tr>
+      <tr><td style="padding:10px;border-bottom:1px solid #d7e5e7;color:var(--muted)">事業内容</td><td style="padding:10px;border-bottom:1px solid #d7e5e7">小規模事業者向けITサポートサブスクリプションの提供</td></tr>
+      <tr><td style="padding:10px;border-bottom:1px solid #d7e5e7;color:var(--muted)">対象地域</td><td style="padding:10px;border-bottom:1px solid #d7e5e7">京浜工業地帯(川崎区中心)</td></tr>
+    </table>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap" style="text-align:center">
+    <h2 style="margin-bottom:14px">まずは、無料相談から。</h2>
+    <p>「これってITで解決できる?」― その一言から始めてください。</p>
+    <p style="margin-top:18px"><a class="cta" href="mailto:support@keihin-it.jp" style="background:var(--teal);color:#fff">support@keihin-it.jp へメールする</a></p>
+    <p style="margin-top:12px;color:var(--muted);font-size:.85rem">お問い合わせ窓口: support@keihin-it.jp</p>
+  </div>
+</section>
+
+<footer>
+  <div class="logo">京浜ITパートナーズ</div>
+  <p>京浜工業地帯の小さな会社に、大企業並みのIT活用を。</p>
+  <p style="margin-top:14px;font-size:.75rem">© 2026 京浜ITパートナーズ</p>
+</footer>
+
+</body>
+</html>
